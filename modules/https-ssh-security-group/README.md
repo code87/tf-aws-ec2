@@ -1,5 +1,7 @@
 # HTTP(s) & SSH Security Group
 
+Current version: `v0.0.3`
+
 Terraform module for creating EC2 Security Group in a given VPC which:
 * allows HTTP (80) inbound traffic
 * allows HTTPS (443) inbound traffic
@@ -11,20 +13,22 @@ Terraform module for creating EC2 Security Group in a given VPC which:
 
 ```terraform
 module "my_web_security_group" {
-  source = "github.com/code87/tf-aws-ec2//modules/https-ssh-security-group?ref=v0.0.2"
+  source = "github.com/code87/tf-aws-ec2//modules/https-ssh-security-group?ref=v0.0.3"
 
   name_prefix = "myproject-staging"
   vpc_id      = my_vpc_id
 }
 ```
 
+_See also_: [examples/https-ssh-security-group/](https://github.com/code87/tf-aws-ec2/blob/master/examples/https-ssh-security-group/)
+
 
 ## Requirements
 
 | Name        | Version           |
 |-------------|-------------------|
-| `terraform` | >= 1.0.0, < 2.0.0 |
-| `aws`       | ~> 4.0            |
+| `terraform` | >= 1.3.0, < 2.0.0 |
+| `aws`       | ~> 5.0            |
 
 
 ## Resources
