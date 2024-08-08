@@ -40,6 +40,8 @@ module "my_instance" {
 }
 ```
 
+_See also_: [examples/ec2-instance/](https://github.com/code87/tf-aws-ec2/blob/master/examples/ec2-instance/)
+
 
 ## Requirements
 

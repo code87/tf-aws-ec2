@@ -80,12 +80,15 @@ output "instance_id" {
 output "instance_type" {
   value = module.my_ec2_instance.instance_type
 }
+
 output "instance_ami_id" {
   value = module.my_ec2_instance.instance_ami_id
 }
+
 output "instance_ssh_key_pair" {
   value = module.my_ec2_instance.instance_ssh_key_pair
 }
+
 output "public_ip" {
   value = module.my_ec2_instance.public_ip
 }
