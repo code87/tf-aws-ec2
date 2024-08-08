@@ -1,5 +1,7 @@
 # AWS DLM Lifecycle Policy
 
+Current version: `v0.0.3`
+
 Terraform module for creating AWS Data Lifecycle Manager (DLM) Lifecycle Policy for EC2 instance backup.
 
 
@@ -7,7 +9,7 @@ Terraform module for creating AWS Data Lifecycle Manager (DLM) Lifecycle Policy 
 
 ```terraform
 module "my_dlm_lifecycle_policy" {
-  source = "github.com/code87/tf-aws-ec2//modules/dlm-lifecycle-policy?ref=v0.0.1"
+  source = "github.com/code87/tf-aws-ec2//modules/dlm-lifecycle-policy?ref=v0.0.3"
 
   name_prefix          = "myproject-staging"
   target_instance_name = "myproject-webserver"
@@ -17,13 +19,15 @@ module "my_dlm_lifecycle_policy" {
 }
 ```
 
+_See also:_ [examples/dlm-lifecycle-policy/](https://github.com/code87/tf-aws-ec2/tree/master/examples/dlm-lifecycle-policy)
+
 
 ## Requirements
 
 | Name        | Version           |
 |-------------|-------------------|
-| `terraform` | >= 1.0.0, < 2.0.0 |
-| `aws`       | ~> 4.0            |
+| `terraform` | >= 1.3.0, < 2.0.0 |
+| `aws`       | ~> 5.0            |
 
 
 ## Resources

@@ -8,6 +8,12 @@ Current version: `v0.0.2`
 * [dlm-lifecycle-policy](modules/dlm-lifecycle-policy/README.md)
 * [https-ssh-security-group](modules/https-ssh-security-group/README.md)
 
+
+## Examples
+
+See [examples/](examples/) folder.
+
+
 ## License
 
 Apache 2 Licensed. See [LICENSE](LICENSE) for full details.
