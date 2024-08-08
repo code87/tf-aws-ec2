@@ -1,6 +1,6 @@
 # Terraform Modules for AWS EC2 services
 
-Current version: `v0.0.2`
+Current version: `v0.0.3`
 
 ## List of modules
 
