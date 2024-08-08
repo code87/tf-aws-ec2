@@ -26,8 +26,7 @@ variable "volume_encryption" {
   default     = false
 }
 
-# TODO: rename to kms_key_arn
-variable "kms_key_id" {
+variable "kms_key_arn" {
   description = "KMS Custom-managed key ARN for EC2 instance root volume encryption. Default: null"
   type        = string
   default     = null

@@ -1,5 +1,7 @@
 # AWS EC2 Instance
 
+Current version: `v0.0.3`
+
 Terraform module for creating AWS EC2 instance with the following properties:
 * a given instance type (e.g. t3.micro)
 * launched with given IAM instance profile (optional)
@@ -15,7 +17,7 @@ Terraform module for creating AWS EC2 instance with the following properties:
 
 ```terraform
 module "my_instance" {
-  source = "github.com/code87/tf-aws-ec2//modules/ec2-instance?ref=v0.0.1"
+  source = "github.com/code87/tf-aws-ec2//modules/ec2-instance?ref=v0.0.3"
 
   name              = "myproject-staging-webserver"
   ami_id            = my_ami_id
@@ -43,8 +45,8 @@ module "my_instance" {
 
 | Name        | Version           |
 |-------------|-------------------|
-| `terraform` | >= 1.0.0, < 2.0.0 |
-| `aws`       | ~> 4.0            |
+| `terraform` | >= 1.3.0, < 2.0.0 |
+| `aws`       | ~> 5.0            |
 
 
 ## Resources
@@ -63,7 +65,7 @@ module "my_instance" {
 | `instance_type`        | EC2 Instance type                                                  | `string`    | `t3.micro` | no       |
 | `volume_size`          | Size of the volume in gibibytes (GiB)                              | `number`    | `8`        | no       |
 | `volume_encryption`    | Enables or disables EC2 instance root volume encryption            | `bool`      | `false`    | no       |
-| `kms_key_id`           | KMS Custom-managed key ARN for EC2 instance root volume encryption | `string`    | `null`     | no       |
+| `kms_key_arn`          | KMS Custom-managed key ARN for EC2 instance root volume encryption | `string`    | `null`     | no       |
 | `ssh_key_pair`         | Key-pair name for SSH access to EC2 Instance                       | `string`    |            | yes      |
 | `iam_instance_profile` | EC2 Instance IAM profile name                                      | `string`    | `null`     | no       |
 | `subnet_id`            | VPC Subnet ID to launch in                                         | any         |            | yes      |
